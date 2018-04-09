@@ -65,6 +65,19 @@
     section = [XLFormSectionDescriptor formSection];
     [form addFormSection:section];
     
+    //fillingId
+    row = [XLFormRowDescriptor formRowDescriptorWithTag:@"fillingId" rowType:XLFormRowDescriptorTypeText title:@"Filling ID"];
+    if(_object) {
+        if([_object valueForKey:@"fillingId"]) {
+            row.value = [_object valueForKey:@"fillingId"];
+        }
+        else {
+            row.value = [NSUUID UUID].UUIDString;
+        }
+    }
+    [row.cellConfigAtConfigure setObject:@NO forKey:@"textField.enabled"];
+    [section addFormRow:row];
+    
     // filling date
     row = [XLFormRowDescriptor formRowDescriptorWithTag:@"date" rowType:XLFormRowDescriptorTypeDateInline title:@"Date"];
     if(_object) {
@@ -108,6 +121,7 @@
     [row.cellConfigAtConfigure setObject:@"station" forKey:@"textField.placeholder"];
     if(_object) row.value = [_object valueForKey:@"station"];
     [row.cellConfigAtConfigure setObject:@(NSTextAlignmentRight) forKey:@"textField.textAlignment"];
+    //[row.cellConfigAtConfigure setObject:@(UITextAutocapitalizationTypeWords) forKey:@"textField.autocapitalizationType"];
     [section addFormRow:row];
     
     self.form = form;
@@ -133,6 +147,7 @@
     NSLog(@"%@", self.formValues);
     NSManagedObjectContext *context = [self managedObjectContext];
     
+    NSString *fillingId = self.formValues[@"fillingId"];
     NSDate *date        = self.formValues[@"date"];
     NSNumber *amount    = self.formValues[@"amount"];
     NSNumber *odometer  = self.formValues[@"odometer"];
@@ -158,6 +173,7 @@
         amount = [self calculateAmount];
     }
     
+    [newEntry setValue:fillingId                            forKey:@"fillingId"];
     [newEntry setValue:date                                 forKey:@"date"];
     [newEntry setValue:amount.isNotNull?amount:@(0.00)      forKey:@"amount"];
     [newEntry setValue:odometer.isNotNull?odometer:@(0.00)  forKey:@"odometer"];

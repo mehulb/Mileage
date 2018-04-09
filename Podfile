@@ -7,6 +7,11 @@ target 'Mileage' do
   
   pod 'BFKit'
   pod 'XLForm'
+  pod 'Backendless'
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
+  
+  pod 'TesseractOCRiOS'
 
   # Pods for Mileage
 

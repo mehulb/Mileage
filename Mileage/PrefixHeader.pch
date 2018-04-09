@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  Mileage
+//
+//  Created by Mehul Bhavani on 09/04/18.
+//  Copyright © 2018 AppYogi Software. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define NSLog(FORMAT, ...) printf("%s[L:%d]%s\n", __PRETTY_FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#import "DataManager.h"
+
+#endif /* PrefixHeader_pch */

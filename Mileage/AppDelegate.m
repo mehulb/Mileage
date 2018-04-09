@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+//#import "BackendlessManager.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+//    [BackendlessManager sharedManager];
+    [DataManager defaultManager];
+    
     return YES;
 }
 

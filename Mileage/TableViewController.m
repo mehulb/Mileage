@@ -12,8 +12,6 @@
 #import "TableViewCell.h"
 #import "HeaderView.h"
 
-#define NSLog(FORMAT, ...) printf("%s[L:%d]%s\n", __PRETTY_FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
-
 @interface TableViewController ()
 @end
 
@@ -31,7 +29,7 @@
     [super viewDidLoad];
     
     self.title = @"Mileage";
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addBarButtonItem_Tapped:)];
+    //self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addBarButtonItem_Tapped:)];
     
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([TableViewCell class]) bundle:nil] forCellReuseIdentifier:@"CellID"];
     self.tableView.separatorInset = UIEdgeInsetsZero;
@@ -80,14 +78,21 @@
 }
 
 - (void)addBarButtonItem_Tapped:(id)sender {
+    
+}
+- (IBAction)addButton_Clicked:(id)sender {
     FormViewController *formController = [[FormViewController alloc] init];
     UINavigationController *controller = [[UINavigationController alloc] initWithRootViewController:formController];
     [self presentViewController:controller animated:YES completion:nil];
 }
-- (IBAction)addButton_Clicked:(id)sender {
-    [self addBarButtonItem_Tapped:nil];
+- (IBAction)refreshControl_ValueChanged:(UIRefreshControl *)sender {
+    sender.attributedTitle = [[NSAttributedString alloc] initWithString:@"syncing..."];
+    [[DataManager defaultManager] syncWithCompletionBlock:^(id result, NSError *error) {
+        [sender endRefreshing];
+        [self.tableView reloadData];
+        sender.attributedTitle = [[NSAttributedString alloc] initWithString:@"pull and release to sync"];
+    }];
 }
-
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -129,11 +134,11 @@
     }
     
     cell.distanceLabel.text = [NSString stringWithFormat:@"%.2f KM", [[entry valueForKey:@"odometer"] floatValue]];
-    if(indexPath.row < entries.count-1) {
-        NSManagedObject *prevEntry = entries[indexPath.row+1];
+    if(indexPath.row > 0) {
+        NSManagedObject *prevEntry = entries[indexPath.row-1];
         CGFloat currOdo = [[entry valueForKey:@"odometer"] floatValue];
         CGFloat lastOdo = [[prevEntry valueForKey:@"odometer"] floatValue];
-        CGFloat distance = currOdo-lastOdo;
+        CGFloat distance = lastOdo-currOdo;
         cell.distanceLabel.text = [NSString stringWithFormat:@"%.2f KM", distance];
         cell.mileageLabel.text = [NSString stringWithFormat:@"  %.1f KM/L  ", distance / [[entry valueForKey:@"volume"] floatValue]];
     }

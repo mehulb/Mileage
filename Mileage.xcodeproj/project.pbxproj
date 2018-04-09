@@ -10,6 +10,8 @@
 		2806FD931FC94D8B0048B86D /* FormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2806FD921FC94D8B0048B86D /* FormViewController.m */; };
 		28077F991FD6D8C2002DDAF8 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28077F971FD6D8C2002DDAF8 /* TableViewCell.m */; };
 		28077F9A1FD6D8C2002DDAF8 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28077F981FD6D8C2002DDAF8 /* TableViewCell.xib */; };
+		281693EE207AB4E600D7E90F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 281693ED207AB4E600D7E90F /* GoogleService-Info.plist */; };
+		281693F1207AB60000D7E90F /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 281693F0207AB60000D7E90F /* DataManager.m */; };
 		289D39811FDC248C0000F43F /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 289D39801FDC248C0000F43F /* HeaderView.m */; };
 		28AB53C71FC2A08C0028C877 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AB53C61FC2A08C0028C877 /* AppDelegate.m */; };
 		28AB53CD1FC2A08C0028C877 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28AB53CB1FC2A08C0028C877 /* Main.storyboard */; };
@@ -18,6 +20,9 @@
 		28AB53D51FC2A08C0028C877 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28AB53D31FC2A08C0028C877 /* LaunchScreen.storyboard */; };
 		28AB53D81FC2A08C0028C877 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AB53D71FC2A08C0028C877 /* main.m */; };
 		28AB53E01FC2A0EC0028C877 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AB53DF1FC2A0EC0028C877 /* TableViewController.m */; };
+		28C08B0E203E7DFB0092F82E /* BackendlessManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C08B0D203E7DFB0092F82E /* BackendlessManager.m */; };
+		28E4C328206BC2F900B52C1F /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E4C327206BC2F900B52C1F /* CoreImage.framework */; };
+		28E4C32A206BC30100B52C1F /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E4C329206BC30100B52C1F /* libstdc++.tbd */; };
 		C0F87192B90F1C0753D25DC3 /* libPods-Mileage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0874E6553C7D9DE276731D /* libPods-Mileage.a */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +32,10 @@
 		28077F961FD6D8C2002DDAF8 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		28077F971FD6D8C2002DDAF8 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		28077F981FD6D8C2002DDAF8 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		281693EC207AA01400D7E90F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		281693ED207AB4E600D7E90F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		281693EF207AB60000D7E90F /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		281693F0207AB60000D7E90F /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		289D397F1FDC248C0000F43F /* HeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
 		289D39801FDC248C0000F43F /* HeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
 		28AB53C21FC2A08C0028C877 /* Mileage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mileage.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +49,10 @@
 		28AB53D71FC2A08C0028C877 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28AB53DE1FC2A0EC0028C877 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		28AB53DF1FC2A0EC0028C877 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		28C08B0C203E7DFB0092F82E /* BackendlessManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackendlessManager.h; sourceTree = "<group>"; };
+		28C08B0D203E7DFB0092F82E /* BackendlessManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackendlessManager.m; sourceTree = "<group>"; };
+		28E4C327206BC2F900B52C1F /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		28E4C329206BC30100B52C1F /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		2D5856B23AEB3FE93D80551B /* Pods-Mileage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mileage.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mileage/Pods-Mileage.release.xcconfig"; sourceTree = "<group>"; };
 		7AE8E28DF27E403903479069 /* Pods-Mileage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mileage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mileage/Pods-Mileage.debug.xcconfig"; sourceTree = "<group>"; };
 		DB0874E6553C7D9DE276731D /* libPods-Mileage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mileage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28E4C32A206BC30100B52C1F /* libstdc++.tbd in Frameworks */,
+				28E4C328206BC2F900B52C1F /* CoreImage.framework in Frameworks */,
 				C0F87192B90F1C0753D25DC3 /* libPods-Mileage.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +84,7 @@
 		28077F951FD6D893002DDAF8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				281693ED207AB4E600D7E90F /* GoogleService-Info.plist */,
 				28AB53C51FC2A08C0028C877 /* AppDelegate.h */,
 				28AB53C61FC2A08C0028C877 /* AppDelegate.m */,
 				28AB53D61FC2A08C0028C877 /* Info.plist */,
@@ -76,6 +92,7 @@
 				28AB53D11FC2A08C0028C877 /* Assets.xcassets */,
 				28AB53D31FC2A08C0028C877 /* LaunchScreen.storyboard */,
 				28AB53D71FC2A08C0028C877 /* main.m */,
+				281693EC207AA01400D7E90F /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -101,6 +118,8 @@
 		28AB53C41FC2A08C0028C877 /* Mileage */ = {
 			isa = PBXGroup;
 			children = (
+				289D397F1FDC248C0000F43F /* HeaderView.h */,
+				289D39801FDC248C0000F43F /* HeaderView.m */,
 				28077F961FD6D8C2002DDAF8 /* TableViewCell.h */,
 				28077F971FD6D8C2002DDAF8 /* TableViewCell.m */,
 				28077F981FD6D8C2002DDAF8 /* TableViewCell.xib */,
@@ -110,8 +129,10 @@
 				2806FD921FC94D8B0048B86D /* FormViewController.m */,
 				28077F951FD6D893002DDAF8 /* Supporting Files */,
 				28AB53CB1FC2A08C0028C877 /* Main.storyboard */,
-				289D397F1FDC248C0000F43F /* HeaderView.h */,
-				289D39801FDC248C0000F43F /* HeaderView.m */,
+				28C08B0C203E7DFB0092F82E /* BackendlessManager.h */,
+				28C08B0D203E7DFB0092F82E /* BackendlessManager.m */,
+				281693EF207AB60000D7E90F /* DataManager.h */,
+				281693F0207AB60000D7E90F /* DataManager.m */,
 			);
 			path = Mileage;
 			sourceTree = "<group>";
@@ -119,6 +140,8 @@
 		BFDECE1F580B60CF769B4370 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				28E4C329206BC30100B52C1F /* libstdc++.tbd */,
+				28E4C327206BC2F900B52C1F /* CoreImage.framework */,
 				DB0874E6553C7D9DE276731D /* libPods-Mileage.a */,
 			);
 			name = Frameworks;
@@ -135,7 +158,6 @@
 				28AB53BE1FC2A08C0028C877 /* Sources */,
 				28AB53BF1FC2A08C0028C877 /* Frameworks */,
 				28AB53C01FC2A08C0028C877 /* Resources */,
-				A070ED45294F54EC465EE1F1 /* [CP] Embed Pods Frameworks */,
 				77677049759FEA3CF48CDFB1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -187,6 +209,7 @@
 			files = (
 				28AB53D51FC2A08C0028C877 /* LaunchScreen.storyboard in Resources */,
 				28077F9A1FD6D8C2002DDAF8 /* TableViewCell.xib in Resources */,
+				281693EE207AB4E600D7E90F /* GoogleService-Info.plist in Resources */,
 				28AB53D21FC2A08C0028C877 /* Assets.xcassets in Resources */,
 				28AB53CD1FC2A08C0028C877 /* Main.storyboard in Resources */,
 			);
@@ -214,29 +237,27 @@
 				"${PODS_ROOT}/BFKit/Source/Languages/zh-Hans.lproj",
 				"${PODS_ROOT}/BFKit/Source/Languages/zh-Hant.lproj",
 				"${PODS_ROOT}/XLForm/XLForm/XLForm.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC/gRPCCertificates.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/id.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/it.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/pt-Br.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ru.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sv.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/tr.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/uk.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/vi.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hans.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hant.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/XLForm.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mileage/Pods-Mileage-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A070ED45294F54EC465EE1F1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mileage/Pods-Mileage-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AC06C78E3C0F9975AE784076 /* [CP] Check Pods Manifest.lock */ = {
@@ -270,6 +291,8 @@
 				28AB53D81FC2A08C0028C877 /* main.m in Sources */,
 				28AB53C71FC2A08C0028C877 /* AppDelegate.m in Sources */,
 				2806FD931FC94D8B0048B86D /* FormViewController.m in Sources */,
+				28C08B0E203E7DFB0092F82E /* BackendlessManager.m in Sources */,
+				281693F1207AB60000D7E90F /* DataManager.m in Sources */,
 				28AB53E01FC2A0EC0028C877 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +430,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F29CBJHU28;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = Mileage/PrefixHeader.pch;
 				INFOPLIST_FILE = Mileage/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -423,6 +448,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F29CBJHU28;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = Mileage/PrefixHeader.pch;
 				INFOPLIST_FILE = Mileage/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

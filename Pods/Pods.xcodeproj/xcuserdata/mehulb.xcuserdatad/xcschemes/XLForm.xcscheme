@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '39D3208D469D547F7BACD6FCBB4A8352'
-               BlueprintName = 'XLForm'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libXLForm.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2932A979F2F95CD22AD8961096178D32"
+               BlueprintName = "XLForm"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libXLForm.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

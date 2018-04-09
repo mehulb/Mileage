@@ -40,6 +40,20 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="JyC-bQ-o1n"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="YuI-Da-CLF">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <attributedString key="attributedTitle">
+                            <fragment content="pull and release to sync">
+                                <attributes>
+                                    <font key="NSFont" size="18" name="HelveticaNeue-Light"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <connections>
+                            <action selector="refreshControl_ValueChanged:" destination="aWq-s7-ZyW" eventType="valueChanged" id="Aaw-x8-Rzm"/>
+                        </connections>
+                    </refreshControl>
                     <connections>
                         <outlet property="addButton" destination="5fM-7T-kSH" id="WW9-x6-V9w"/>
                         <outlet property="footerView" destination="T1k-K0-bPf" id="BUB-vI-Y4p"/>
