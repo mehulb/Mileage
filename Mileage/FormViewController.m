@@ -67,12 +67,10 @@
     
     //fillingId
     row = [XLFormRowDescriptor formRowDescriptorWithTag:@"fillingId" rowType:XLFormRowDescriptorTypeText title:@"Filling ID"];
+    row.value = [NSUUID UUID].UUIDString;
     if(_object) {
         if([_object valueForKey:@"fillingId"]) {
             row.value = [_object valueForKey:@"fillingId"];
-        }
-        else {
-            row.value = [NSUUID UUID].UUIDString;
         }
     }
     [row.cellConfigAtConfigure setObject:@NO forKey:@"textField.enabled"];
